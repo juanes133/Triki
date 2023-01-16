@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonMenu" parent="Widget.Material3.Button.IconButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="ButtonReset" parent="Widget.Material3.Button.IconButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

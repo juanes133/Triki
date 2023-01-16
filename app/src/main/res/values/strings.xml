@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Triki</string>
+    <string name="exit">Salir</string>
+    <string name="play">Jugar</string>
+    <string name="player_1">Jugador 1:</string>
+    <string name="_0">0</string>
+    <string name="computer">Computadora:</string>
+    <string name="draws">Empates:</string>
+    <string name="reset">Reiniciar</string>
+    <string name="next_player">Turno: %1$s</string>
+    <string name="winner">Has Ganado :)</string>
+    <string name="tie">Empate</string>
 </resources>

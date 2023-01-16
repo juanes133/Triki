@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentGameMenu">
+    <fragment
+        android:id="@+id/fragmentGameMenu"
+        android:name="com.play.triki.FragmentGameMenu"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu_game">
+        <action
+            android:id="@+id/action_fragmentGameMenu_to_fragmentStartGame"
+            app:destination="@id/fragmentStartGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStartGame"
+        android:name="com.play.triki.FragmentStartGame"
+        android:label="PlayGame"
+        tools:layout="@layout/fragment_start_game" />
+</navigation>
