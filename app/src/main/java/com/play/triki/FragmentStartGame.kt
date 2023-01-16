@@ -93,15 +93,26 @@ class FragmentStartGame : Fragment() {
             winner.isNotEmpty() -> {
                 binding.txtResult.text = getString(R.string.winner)
                 binding.txtResult.setTextColor(ContextCompat.getColor(requireContext(),
-                    R.color.white))
+                    R.color.green))
+                binding.btn1.isEnabled = false
+                binding.btn2.isEnabled = false
+                binding.btn3.isEnabled = false
+                binding.btn4.isEnabled = false
+                binding.btn5.isEnabled = false
+                binding.btn6.isEnabled = false
+                binding.btn7.isEnabled = false
+                binding.btn8.isEnabled = false
+                binding.btn9.isEnabled = false
+
             }
             cells.size == totalCell -> {
                 binding.txtResult.text = getString(R.string.tie)
                 binding.txtResult.setTextColor(ContextCompat.getColor(requireContext(),
-                    R.color.white))
+                    R.color.black))
             }
             else -> {
                 binding.txtResult.text = getString(R.string.next_player, if (isX) x else o)
+
             }
         }
     }
@@ -146,6 +157,8 @@ class FragmentStartGame : Fragment() {
         isX = true
         winner = ""
         binding.txtResult.text = getString(R.string.next_player, x)
+        binding.txtResult.setTextColor(ContextCompat.getColor(requireContext(),
+            R.color.white))
         resetButton()
     }
 }

@@ -9,5 +9,5 @@
     <string name="reset">Reiniciar</string>
     <string name="next_player">Turno: %1$s</string>
     <string name="winner">Has Ganado :)</string>
-    <string name="tie">Empate</string>
+    <string name="tie">Empate :(</string>
 </resources>
