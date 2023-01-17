@@ -103,12 +103,13 @@ class FragmentStartGame : Fragment() {
                 binding.btn7.isEnabled = false
                 binding.btn8.isEnabled = false
                 binding.btn9.isEnabled = false
-
+                Toast.makeText(context, "Juego finalizado", Toast.LENGTH_SHORT).show()
             }
             cells.size == totalCell -> {
                 binding.txtResult.text = getString(R.string.tie)
                 binding.txtResult.setTextColor(ContextCompat.getColor(requireContext(),
                     R.color.black))
+                Toast.makeText(context, "Juego finalizado", Toast.LENGTH_SHORT).show()
             }
             else -> {
                 binding.txtResult.text = getString(R.string.next_player, if (isX) x else o)
@@ -119,7 +120,6 @@ class FragmentStartGame : Fragment() {
 
     private fun playGame(index: Int) {
         if (winner.isNotEmpty()) {
-            Toast.makeText(context, "Juego finalizado", Toast.LENGTH_SHORT).show()
             return
         }
         when {
